@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Henry Clyde</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+                <li><a href="#" onclick="showSection('resume')">Resume</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+                <li><a href="#" onclick="showSection('personal')">Personal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+    <main class="main">
+        <section id="home">
+            <h2>Home</h2>
+            <h3>Welcome to my Portfolio</h3>
+            <figure>
+                <img src="img/example.jpg" alt="Example">
+                <figcaption>This is an example image.</figcaption>
+            </figure>
+            <video controls>
+                <source src="video/example.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="projects" style="display:none;">
+            <h2>Contact</h2>
+            <p>This is the contact page content.</p>
+        </section>
+
+        <section id="resume" style="display:none;">
+            <h2>Contact</h2>
+            <p>This is the contact page content.</p>
+        </section>
+        
+        <section id="contact" style="display:none;">
+            <h2>Contact</h2>
+            
+            <p>This is the contact page content.</p>
+        </section>
+        
+        <section id="personal" style="display:none;">
+            <p>I have a big interest in astronomy and space. The science of space and time dilation, and the sheer scale of the universe, has always struck me with wonder and amazement. A youtube channel that represents the mysteries of space well is called Kurzegat. Here's a video from them that I enjoy:</p>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>This website was created by Henry Clyde</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
