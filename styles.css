@@ -28,6 +28,25 @@ h2,h3,h4,h5,h6 {
     padding-bottom: 1.5rem;
 }
 
+.site-title {
+    display:flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+@keyframes title {
+    0%      {color: rgb(85, 223, 205);}
+    25%     {color: rgb(174, 105, 240);}
+    50%     {color: rgb(229, 252, 151);}
+    100%    {color: rgb(85, 223, 205);}
+}
+
+.site-title h1 {
+    animation-name: title;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
 .header {
     grid-area: header;
     background: #111827;
@@ -36,9 +55,7 @@ h2,h3,h4,h5,h6 {
     padding: 1rem 4rem;
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 1rem;
-    display: flex;
     justify-content:space-between;
 
 }
@@ -92,12 +109,31 @@ h2,h3,h4,h5,h6 {
 
 #heroCoding {
     width: 100%;
+    max-width: 800px;
+}
+
+#contactFlex {
+    display: flex;
+    justify-content: start;
+    gap: 7%;
+}
+
+#contactFlex a {
+    background-color: rgb(95, 95, 247);
+    padding: 0.5rem 2rem;
+    border-radius:0.5rem
+}
+
+
+#phone-booth {
+    width: 100%;
+    max-width: 600px;
 }
 
 section {
     background: #111827;
     font-size: 1.5rem;
-    padding: 4rem 25% 10rem;
+    padding: 4rem 20% 10rem;
     margin: 0;
     margin-bottom: 5rem;  
     height: 100%;
@@ -111,6 +147,8 @@ section {
 #projects a {
     font-size: 2rem;
 }
+
+
 
 .footer {
     grid-area: footer;
